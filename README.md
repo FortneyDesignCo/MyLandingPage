@@ -1,2 +1,0 @@
-# MyLandingPage
-My Landing Page
