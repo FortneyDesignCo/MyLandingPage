@@ -44,7 +44,7 @@
     .btn{background:var(--cyan);color:var(--black);padding:16px 40px;font-weight:700;border:none;border-radius:6px;
       cursor:pointer;box-shadow:0 0 14px var(--cyan);transition:transform .25s,box-shadow .25s;}
     .btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 20px var(--cyan);}
-    section{padding:100px 5%;}section h2{text-align:center;margin-bottom:60px;font-size:clamp(1.8rem,4vw,2.4rem);}
+    section{padding:100px 5%;scroll-margin-top: 100px;}section h2{text-align:center;margin-bottom:60px;font-size:clamp(1.8rem,4vw,2.4rem);}
     section.light{background:var(--white);color:var(--black);}section.light .btn{background:var(--black);color:var(--white);}
     .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:45px;}
     .card{background:var(--blur-bg);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:38px 30px;
@@ -115,7 +115,6 @@
     <ul>
       <li><a href="#services" onclick="toggleMenu();">Services</a></li>
       <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-      <li><a href="#about" onclick="toggleMenu();">About</a></li>
       <li><a href="#contact" onclick="toggleMenu();">Start</a></li>
     </ul>
   </nav>
@@ -124,7 +123,7 @@
 <section class="hero">
   <img id="monogram" src="text_logo.png" alt="Fortney Design Co text logo">
   <h1>Websites that win and socials that sell.</h1>
-  <p>We build small‑team and small‑business dreams into slick, high‑performing websites—plus the social campaigns that drive traffic to them.</p>
+  <p>We build websites that do more than just look good - they work. Our focus is on delivering clean, functional websites fast - plus the social campaigns that drive traffic to them.</p>
   <a href="https://calendly.com/kevin-fortneydesignco/30min" target="_blank" class="btn">Book a Free Discovery Call</a>
 </section>
 
@@ -140,14 +139,14 @@
 <section id="work" class="light">
   <h2>Featured Work</h2>
   <div class="work-wrapper">
-    <img src="wrestling_site_mock.png" alt="Gettysburg Wrestling website screenshot">
+    <a href="https://www.gettysburgwrestling.com" target="_blank" rel="noopener">
+      <img src="wrestling_site_mock.png" alt="Gettysburg Wrestling website screenshot">
+    </a>
     <p>Gettysburg Wrestling’s new hub went live in March 2025: 48 % traffic bump and parents finding schedules twice as fast.</p>
   </div>
 </section>
 
-<section id="about"></section>
-
-<section id="contact" class="light">
+<section id="contact">
   <h2>Start Your Project</h2>
   <form action="mailto:sales@fortneydesignco.com" method="post" enctype="text/plain">
     <input type="text" name="Name" placeholder="Your Name" required>
