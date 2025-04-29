@@ -61,7 +61,13 @@
       border-radius:50%;filter:blur(180px);opacity:.35;}footer p{font-size:.9rem;opacity:.75;position:relative;z-index:1;}
     @media (max-width:768px){
         header img#text-logo{height:38px;}     /* smaller on mobile */
-        .menu-toggle{display:block;}
+        .menu-toggle{
+          display:block;
+          position:absolute;
+          right:0;
+          top:50%;
+          transform:translateY(-50%);
+        }
         nav ul{
           flex-direction:column;
           gap:20px;
