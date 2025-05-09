@@ -48,7 +48,7 @@
     nav a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--cyan);transition:width .3s;}
     nav a:hover::after{width:100%;}.menu-toggle{display:none;cursor:pointer;}.menu-toggle svg rect{fill:var(--white);}
     .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
-      padding:30px 5% 100px;      /* minimal top space above logo */position:relative;overflow:hidden;}
+      padding:0 5% 100px;         /* no top padding above text logo */position:relative;overflow:hidden;}
     .hero::before,.hero::after{content:'';position:absolute;border-radius:50%;filter:blur(120px);opacity:.55;z-index:-1;
       animation:blob 20s infinite alternate;}
     .hero::before{background:var(--cyan);width:600px;height:600px;top:-180px;left:-180px;}
@@ -57,12 +57,12 @@
     .hero img#monogram{
        width:520px;          /* larger hero text logo */
        max-width:100%;
-       margin-bottom:4px;       /* minimal gap below logo */
+       margin-bottom:0;            /* eliminate space below logo */
        filter:none;          /* drop-shadow removed for text logo */
      }
     .hero h1{
       font-size:clamp(2.3rem,6vw,3.8rem);
-      margin:6px 0 12px;       /* tighter spacing around headline */
+      margin:0 0 12px;            /* remove gap between logo and headline */
       line-height:1.05;
     }
     .hero p{font-size:clamp(1rem,2.2vw,1.35rem);max-width:680px;margin-bottom:38px;}
@@ -110,7 +110,7 @@
       }
     @media (max-width:480px){
       .hero{
-        padding:30px 4% 40px;           /* minimal top space on small screens */
+        padding:0 4% 40px;          /* no top padding on small screens */
       }
       .hero img#monogram{
         width:80vw;                    /* scale up logo on small screens */
@@ -170,7 +170,7 @@
 
 <section class="hero">
   <img id="monogram" src="images/text_logo.png" alt="Fortney Design Co text logo — Gettysburg web design and social media">
-  <h2>Websites that win and socials that sell.</h2>
+  <h1>Websites that win and socials that sell.</h1>
   <p>We build websites that do more than just look good, they work. Our focus is on delivering clean, functional websites fast for businesses in Gettysburg and throughout Central Pennsylvania, plus the social campaigns that drive traffic to them.</p>
   <a href="https://calendly.com/kevin-fortneydesignco/30min" target="_blank" rel="noopener noreferrer" class="btn">Book a Free Discovery Call</a>
 </section>
