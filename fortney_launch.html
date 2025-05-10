@@ -8,20 +8,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html">
-        <img src="images/text_logo.png" alt="Fortney Design Co" class="site-logo">
-      </a>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <header>
+    <a href="index.html">
+      <img id="text-logo"
+           src="images/monogram_logo.png"
+           alt="Fortney Design Co monogram logo">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <svg width="32" height="32" viewBox="0 0 100 80">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="index.html#work"     onclick="toggleMenu()">Work</a></li>
+        <li><a href="index.html#contact"  onclick="toggleMenu()">Start</a></li>
+        <li><a href="blog.html"           onclick="toggleMenu()">Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container blog-post">
@@ -62,6 +69,8 @@
       <p>If you’re a small business, startup, or creative looking to make your mark online, let’s build something that works and wins.</p>
     </article>
   </main>
+
+</main>
 
   <footer class="site-footer">
     <div class="container">
