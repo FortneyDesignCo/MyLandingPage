@@ -82,9 +82,11 @@
       .work-wrapper p{margin:32px 0 0;max-width:720px;text-align:center;font-size:1.1rem;}
       form{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
       input,textarea{padding:14px;border:2px solid #ddd;border-radius:6px;font-size:1rem;}textarea{resize:vertical;}
-      footer{background:#000;text-align:center;padding:48px 5%;position:relative;overflow:hidden;}
-      footer::before{content:'';position:absolute;top:-60px;left:-60px;width:220px;height:220px;background:var(--cyan);
-        border-radius:50%;filter:blur(180px);opacity:.35;}footer p{font-size:.9rem;opacity:.75;position:relative;z-index:1;}
+      footer {
+        text-align: center;
+        padding: 0;
+        background: none;
+      }
       @media (max-width:768px){
           header img#text-logo{height:38px;}     /* smaller on mobile */
           .menu-toggle{
@@ -135,6 +137,7 @@
         text-align: center;
         font-size: clamp(2.5rem, 6vw, 4rem);
         margin-bottom: 1rem;
+        color: var(--cyan);
       }
 
       .blog-index .intro {
@@ -192,6 +195,7 @@
       </div>
       <nav>
         <ul>
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
           <li><a href="index.html#services" onclick="toggleMenu()">Services</a></li>
           <li><a href="index.html#work"     onclick="toggleMenu()">Work</a></li>
           <li><a href="index.html#contact"  onclick="toggleMenu()">Start</a></li>
