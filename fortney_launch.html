@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPRW0FL66D"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-MPRW0FL66D');
+ </script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   <title>Fortney Design Co | Web Design & Social Media Management in Gettysburg PA</title>
+   <meta name="description" content="Fortney Design Co provides professional web design and social media management services for small businesses and organizations in Gettysburg Pennsylvania and across Central PA.">
+   <link rel="canonical" href="https://www.fortneydesignco.com/">
+ 
+   <!-- Open Graph -->
+   <meta property="og:title" content="Fortney Design Co | Web Design & Social Media Management in Gettysburg PA">
+   <meta property="og:description" content="Fortney Design Co provides professional web design and social media management services for small businesses and organizations in Gettysburg Pennsylvania and across Central PA.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.fortneydesignco.com/">
+   <meta property="og:image" content="https://www.fortneydesignco.com/og-image.jpg">
+ 
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Fortney Design Co | Web Design & Social Media Management in Gettysburg PA">
+   <meta name="twitter:description" content="Fortney Design Co provides professional web design and social media management services for small businesses and organizations in Gettysburg Pennsylvania and across Central PA.">
+   <meta name="twitter:image" content="https://www.fortneydesignco.com/og-image.jpg">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+   <style>
+     :root{--black:#0d0d0d;--white:#ffffff;--cyan:#05d9e8;--blur-bg:rgba(255,255,255,.05);}
+     *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',Arial,sans-serif;}
+     body{background:var(--black);color:var(--white);line-height:1.6;scroll-behavior:smooth;
+       padding-top: 80px;
+     }
+     img{max-width:100%;display:block;}h1,h2,h3{font-weight:700;}
+     header{position:fixed;top:0;left:0;width:100%;padding:16px 5%;background:rgba(13,13,13,.85);backdrop-filter:blur(10px);
+       display:flex;justify-content:space-between;align-items:center;z-index:1000;border-bottom:1px solid rgba(255,255,255,.07);}
+     header img#text-logo{
+         height:52px;      /* larger on desktop */
+         max-height:64px;
+         width:auto;       /* keep aspect ratio */
+       }
+     nav ul{list-style:none;display:flex;gap:32px;}
+     nav a{text-decoration:none;font-weight:600;position:relative;transition:opacity .3s;}nav a:hover{opacity:.75;}
+     nav a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--cyan);transition:width .3s;}
+     nav a:hover::after{width:100%;}.menu-toggle{display:none;cursor:pointer;}.menu-toggle svg rect{fill:var(--white);}
+     .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+       padding:0 5% 100px;         /* no top padding above text logo */position:relative;overflow:hidden;}
+     .hero::before,.hero::after{content:'';position:absolute;border-radius:50%;filter:blur(120px);opacity:.55;z-index:-1;
+       animation:blob 20s infinite alternate;}
+     .hero::before{background:var(--cyan);width:600px;height:600px;top:-180px;left:-180px;}
+     .hero::after{background:#0066ff;width:500px;height:500px;right:-160px;bottom:-160px;animation-delay:6s;}
+     @keyframes blob{to{transform:translate(60px,-60px) scale(1.1);}}
+     .hero img#monogram{
+        width:520px;          /* larger hero text logo */
+        max-width:100%;
+        margin-bottom:0;            /* eliminate space below logo */
+        filter:none;          /* drop-shadow removed for text logo */
+      }
+     .hero h1{
+       font-size:clamp(2.3rem,6vw,3.8rem);
+       margin:0 0 12px;            /* remove gap between logo and headline */
+       line-height:1.05;
+     }
+     .hero p{font-size:clamp(1rem,2.2vw,1.35rem);max-width:680px;margin-bottom:38px;}
+     .btn{background:var(--cyan);color:var(--black);padding:16px 40px;font-weight:700;border:none;border-radius:6px;
+       cursor:pointer;box-shadow:0 0 14px var(--cyan);transition:transform .25s,box-shadow .25s;}
+     .btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 20px var(--cyan);}
+     section{padding:100px 5%;scroll-margin-top: 100px;}section h2{text-align:center;margin-bottom:60px;font-size:clamp(1.8rem,4vw,2.4rem);}
+     section.light{background:var(--white);color:var(--black);}section.light .btn{background:var(--black);color:var(--white);}
+     .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:45px;}
+     .card{background:var(--blur-bg);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:38px 30px;
+       backdrop-filter:blur(8px);transition:transform .35s,box-shadow .35s;}
+     .card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 18px 28px rgba(0,0,0,.45);}
+     .card h3{font-size:1.6rem;margin-bottom:18px;}
+     .work-wrapper{display:flex;flex-direction:column;align-items:center;}
+     .work-wrapper img{border-radius:10px;box-shadow:0 12px 24px rgba(0,0,0,.6);}
+     .work-wrapper p{margin:32px 0 0;max-width:720px;text-align:center;font-size:1.1rem;}
+     form{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:18px;}
+     input,textarea{padding:14px;border:2px solid #ddd;border-radius:6px;font-size:1rem;}textarea{resize:vertical;}
+     footer {
+       text-align: center;
+       padding: 0;
+       background: none;
+     }
+     @media (max-width:768px){
+         header img#text-logo{height:38px;}     /* smaller on mobile */
+         .menu-toggle{
+           display:block;
+           position:absolute;
+           right:8px;
+           top:50%;
+           transform:translateY(-50%);
+         }
+         nav ul{
+           flex-direction:column;
+           gap:20px;
+           position:absolute;
+           top:70px;
+           right:0;
+           background:rgba(13,13,13,.95);
+           padding:25px 30px;
+           border:1px solid rgba(255,255,255,.08);
+           border-radius:8px;
+           display:none;
+         }
+         nav ul.show{display:flex;}
+         header{padding:14px 0 14px 5%;}
+       }
+     @media (max-width:480px){
+       .hero{
+         padding:0 4% 40px;          /* no top padding on small screens */
+       }
+       .hero img#monogram{
+         width:80vw;                    /* scale up logo on small screens */
+       }
+       .hero h1{
+         font-size:clamp(1.8rem,7vw,2.4rem);  /* smaller headline on small screens */
+       }
+       .hero p{
+         font-size:1rem;
+         margin-bottom:30px;
+       }
+       .services-grid{
+         grid-template-columns:1fr;     /* single column cards */
+         gap:32px;
+       }
+       header img#text-logo{
+         height:34px;                   /* slightly smaller header logo */
+       }
+     }
+     .blog-index h1 {
+       text-align: center;
+       font-size: clamp(2.5rem, 6vw, 4rem);
+       margin-bottom: 1rem;
+       color: var(--cyan);
+     }
+
+     .blog-index .intro {
+       text-align: center;
+     }
+
+     .posts-grid .post-card {
+       text-align: center;
+     }
+     .post-card .post-title {
+       margin-bottom: 0.75rem;
+     }
+
+     .blog-index .intro h3 {
+       text-align: center;
+       margin: 0 auto 1rem;
+     }
+    .blog-post article p {
+      text-indent: 1.5em;
+    }
+   </style>
+   <script>
+     function toggleMenu(){document.querySelector('nav ul').classList.toggle('show');}
+     document.addEventListener('DOMContentLoaded',()=>{const yr=document.getElementById('year');if(yr)yr.textContent=new Date().getFullYear();});
+   </script>
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "LocalBusiness",
+     "name": "Fortney Design Co",
+     "url": "https://www.fortneydesignco.com/",
+     "description": "Web design and social media management agency serving Gettysburg and Central Pennsylvania.",
+     "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Gettysburg",
+       "addressRegion": "PA",
+       "postalCode": "17325",
+       "addressCountry": "US"
+     },
+     "image": "https://www.fortneydesignco.com/og-image.jpg"
+   }
+   </script>
+ </head>
+<body>
+  <header>
+    <a href="index.html">
+      <img id="text-logo"
+           src="images/monogram_logo.png"
+           alt="Fortney Design Co monogram logo">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <svg width="32" height="32" viewBox="0 0 100 80">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="index.html#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="index.html#work"     onclick="toggleMenu()">Work</a></li>
+        <li><a href="index.html#contact"  onclick="toggleMenu()">Start</a></li>
+        <li><a href="blog.html"           onclick="toggleMenu()">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container blog-post">
+    <article>
+      <h1>Building Fortney Design Co: Lessons Learned from Launching My Freelance Web Design Site</h1>
+<br>
+      <p>When I set out to build the Fortney Design Co website, I knew I wanted it to do more than just show off some flashy layouts. It had to reflect who I am, how I work, and what I deliver. This wasn’t my first build, but it <em>was</em> the first time I was designing a site to represent myself and my business. That made it personal. And that made it matter.</p>
+<br>
+      <h2>Starting with Identity</h2><br>
+      <p>Before writing a single line of code, I had to nail down my brand. After some brainstorming (and a few dozen logo drafts), I landed on the name <strong>Fortney Design Co</strong>. It felt clean, professional, and rooted. It is the kind of name you could trust with a big idea. From there, I created a monogram logo and paired it with a simple, bold text mark. The color scheme centered around a cyan accent to bring in a fresh, modern energy without overcomplicating the palette.</p>
+<br>
+      <h2>The Build</h2><br>
+      <p>The site was hand‑coded using HTML and CSS and hosted on GitHub Pages, a platform I’ve grown comfortable with for fast, reliable deployment. I created a responsive layout that showcases three core service tiers:</p><br>
+      <ul>
+        <li><strong>Site Sprint</strong> - fast‑turnaround, no‑fluff web builds</li>
+        <li><strong>Growth Bundle</strong> - a more in‑depth offering, combining web and brand growth tools</li>
+        <li><strong>Season‑Long Care</strong> - monthly maintenance for clients who want ongoing support</li>
+      </ul><br>
+      <p>Each offering has its own tone, but they all stick to one core promise: clean, functional websites that get results.</p>
+<br>
+      <h2>Design Choices that Made a Difference</h2><br>
+      <p>One big lesson was that <em>visual hierarchy matters more than you think</em>. I iterated on the hero section several times, resizing logos, adjusting spacing, and refining tagline font sizes until it hit that sweet spot where everything just <em>clicked</em>. Another was making sure the hamburger menu sat just right on mobile. Tiny details like padding on mobile headers? They make a big difference in how professional a site feels.</p><br>
+      <p>I also included direct CTAs like a <strong>Book a Free Discovery Call</strong> button linked to Calendly and set up the contact section to connect directly to <a href="mailto:sales@fortneydesignco.com">sales@fortneydesignco.com</a>. Every piece had to serve a purpose, not just take up space.</p>
+<br>
+      <h2>What I Learned</h2><br>
+      <ul>
+        <li><strong>Consistency builds trust.</strong> From logo placement to color use, keeping things consistent across the site made the experience feel polished.</li><br>
+        <li><strong>Simplicity wins.</strong> I avoided overloading the site with animations or unnecessary extras. Clean design and fast load times trump complexity every time.</li><br>
+        <li><strong>Iteration is the secret weapon.</strong> Almost nothing stayed the same from my first draft, and that’s a good thing. Iterating quickly (and often) made the site sharper with each pass.</li><br>
+        <li><strong>It’s never really done.</strong> Even after launch, I’m tweaking copy, refining design, and keeping everything optimized for mobile.</li><br>
+      </ul>
+<br>
+      <h2>What’s Next</h2><br>
+      <p>Now that the site’s live, I’m turning my attention toward outreach, building a client base, and expanding service offerings. I’m also teaming up with my sister, who’s a social media consultant, to offer bundled branding and content packages. Together, we’re aiming to help businesses not only <em>launch</em>, but <em>grow</em> online.</p>
+<br>
+      <h2>Final Thoughts</h2><br>
+      <p>Launching the Fortney Design Co website was more than a portfolio exercise; it was a commitment to my own business. It’s a starting line, not a finish line. And with every client project I take on, I’ll bring this same level of care, clarity, and clean execution to the table.</p><br>
+      <p>If you’re a small business, startup, or creative looking to make your mark online, let’s build something that works and wins.</p>
+    </article>
+  </main>
+
+</main>
+<br><br>
+</main>
+<div class="back-to-blog" style="text-align:center; margin:2rem 0;">
+  <a href="blog.html">Back to Blog</a>
+</div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Fortney Design Co. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
