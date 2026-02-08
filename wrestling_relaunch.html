@@ -32,7 +32,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -52,22 +52,23 @@
   <a href="index.html">
     <img id="text-logo" src="images/monogram_logo.png" alt="Fortney Design Co monogram logo">
   </a>
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <svg width="28" height="28" viewBox="0 0 100 80"><rect width="100" height="8" rx="4"/><rect y="30" width="100" height="8" rx="4"/><rect y="60" width="100" height="8" rx="4"/></svg>
-  </div>
   <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <svg width="26" height="26" viewBox="0 0 100 80"><rect width="100" height="8" rx="4"/><rect y="30" width="100" height="8" rx="4"/><rect y="60" width="100" height="8" rx="4"/></svg>
+    </div>
     <ul>
       <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
       <li><a href="index.html#services" onclick="toggleMenu()">Services</a></li>
       <li><a href="index.html#work" onclick="toggleMenu()">Work</a></li>
-      <li><a href="index.html#contact" onclick="toggleMenu()">Start</a></li>
       <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta" onclick="toggleMenu();">Start a Project <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
     </ul>
   </nav>
 </header>
 
 <main class="blog-post container">
   <article>
+    <span class="mono-label" style="margin-bottom:20px;">Case Study</span>
     <h1>Rebuilding the Gettysburg Wrestling Website</h1>
 
     <p>Moving mats is hard work, but moving an entire site off a rented platform might be harder. Here is how I rebuilt Gettysburg Wrestling from a Squarespace template into a site we own, shape, and grow on our terms.</p>
@@ -118,14 +119,41 @@
 </main>
 
 <footer>
-  <p>&copy; <span id="year"></span> Fortney Design Co. All rights reserved.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img id="text-logo" src="images/monogram_logo.png" alt="Fortney Design Co" style="height:36px;width:auto;margin-bottom:0;">
+      <p>Web design and social media management for small businesses in Gettysburg and Central PA.</p>
+    </div>
+    <div class="footer-nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <div class="footer-contact">
+      <p>Gettysburg, PA</p>
+      <a href="mailto:sales@fortneydesignco.com">sales@fortneydesignco.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Fortney Design Co. All rights reserved.</p>
+    <span class="mono-label">Built with care</span>
+  </div>
 </footer>
 
 <script>
   function toggleMenu(){document.querySelector('nav ul').classList.toggle('show');}
   document.addEventListener('DOMContentLoaded',function(){
     var yr=document.getElementById('year');
-    if(yr)yr.textContent=new Date().getFullYear();
+    if(yr) yr.textContent=new Date().getFullYear();
+
+    document.addEventListener('click',function(e){
+      var nav=document.querySelector('nav ul');
+      var toggle=document.querySelector('.menu-toggle');
+      if(nav.classList.contains('show') && !nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove('show');
+      }
+    });
   });
 </script>
 </body>
