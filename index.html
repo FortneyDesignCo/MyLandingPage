@@ -32,7 +32,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -55,79 +55,187 @@
 </head>
 <body>
 
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <header>
   <a href="#"><img id="text-logo" src="images/monogram_logo.png" alt="Fortney Design Co monogram logo"></a>
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <svg width="28" height="28" viewBox="0 0 100 80"><rect width="100" height="8" rx="4"/><rect y="30" width="100" height="8" rx="4"/><rect y="60" width="100" height="8" rx="4"/></svg>
-  </div>
   <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <svg width="26" height="26" viewBox="0 0 100 80"><rect width="100" height="8" rx="4"/><rect y="30" width="100" height="8" rx="4"/><rect y="60" width="100" height="8" rx="4"/></svg>
+    </div>
     <ul>
       <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+      <li><a href="#process" onclick="toggleMenu();">Process</a></li>
       <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-      <li><a href="#contact" onclick="toggleMenu();">Start</a></li>
+      <li><a href="#contact" class="nav-cta" onclick="toggleMenu();">Start a Project <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></li>
     </ul>
   </nav>
 </header>
 
+<!-- ======================== HERO ======================== -->
 <section class="hero">
+  <span class="mono-label">Web Design &amp; Social Media</span>
   <img id="monogram" src="images/text_logo.png" alt="Fortney Design Co text logo — Gettysburg web design and social media">
   <h1>Websites that <span class="accent">win</span> and socials that <span class="accent">sell.</span></h1>
-  <p>We build websites that do more than just look good &mdash; they work. Clean, functional websites delivered fast for businesses in Gettysburg and throughout Central Pennsylvania, plus the social campaigns that drive traffic to them.</p>
+  <p>We build websites that do more than just look good &mdash; they work. Clean, functional sites delivered fast for businesses in Gettysburg and Central PA, plus the social campaigns that drive real traffic.</p>
+  <div class="hero-cta">
+    <a href="#contact" class="btn">Start a Project <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+  </div>
 </section>
 
+<!-- ======================== STATS ======================== -->
+<div class="stats-bar reveal">
+  <div class="stat">
+    <div class="stat-value"><span class="accent-num">48</span>%</div>
+    <div class="stat-label">Traffic Increase</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">&lt; <span class="accent-num">2</span> Weeks</div>
+    <div class="stat-label">Avg. Delivery</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value"><span class="accent-num">Central</span> PA</div>
+    <div class="stat-label">Based &amp; Built</div>
+  </div>
+</div>
+
+<!-- ======================== SERVICES ======================== -->
 <section id="services">
-  <h2>Our Services</h2>
-  <hr class="section-divider">
+  <div class="section-label"><span class="mono-label">What We Do</span></div>
+  <h2>Services</h2>
+  <p class="section-subtitle">Everything you need to get online, grow your brand, and stay there.</p>
   <div class="services-grid reveal-stagger">
     <div class="card">
-      <span class="card-number">01 &mdash; Launch</span>
+      <span class="card-number">01 &mdash; launch</span>
       <h3>Site Sprint</h3>
-      <p>1&ndash;3 page responsive website, performance-optimized, basic SEO &mdash; delivered within two weeks.</p>
+      <p>1&ndash;3 page responsive website, performance-optimized with basic SEO &mdash; delivered in two weeks flat.</p>
     </div>
     <div class="card">
-      <span class="card-number">02 &mdash; Grow</span>
+      <span class="card-number">02 &mdash; grow</span>
       <h3>Growth Bundle</h3>
       <p>Everything in Site Sprint plus a brand-matched social launch pack &mdash; 12 posts, captions, and a 30-day calendar.</p>
     </div>
     <div class="card">
-      <span class="card-number">03 &mdash; Sustain</span>
+      <span class="card-number">03 &mdash; sustain</span>
       <h3>Season-Long Care</h3>
-      <p>Ongoing updates, hosting, analytics, and eight social posts every month to keep your audience engaged.</p>
+      <p>Ongoing updates, hosting, analytics, and eight social posts monthly to keep your audience engaged.</p>
     </div>
   </div>
 </section>
 
-<section id="work" class="light">
-  <h2>Featured Work</h2>
-  <hr class="section-divider" style="background:var(--black);">
-  <div class="work-wrapper reveal">
-    <a href="https://www.gettysburgwrestling.com" target="_blank" rel="noopener noreferrer">
-      <img src="images/wrestling_site_mock.png" alt="Gettysburg Wrestling website designed by Fortney Design Co">
-    </a>
-    <p>Gettysburg Wrestling's new hub went live in March 2025: 48% traffic bump and parents finding schedules twice as fast.</p>
+<!-- ======================== PROCESS ======================== -->
+<section id="process" class="light">
+  <div class="section-label"><span class="mono-label">How We Work</span></div>
+  <h2>Our Process</h2>
+  <p class="section-subtitle">Four steps from first conversation to live launch.</p>
+  <div class="process-grid reveal-stagger">
+    <div class="process-step">
+      <div class="process-step-number">01</div>
+      <h4>Brief</h4>
+      <p>We learn your goals, audience, and brand voice in a quick kickoff call.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-step-number">02</div>
+      <h4>Design</h4>
+      <p>Wireframes and visual concepts, iterated until every detail is right.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-step-number">03</div>
+      <h4>Build</h4>
+      <p>Clean, hand-coded HTML &amp; CSS. Performance-tuned and fully responsive.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-step-number">04</div>
+      <h4>Launch</h4>
+      <p>Go live with analytics, SEO, and ongoing support from day one.</p>
+    </div>
   </div>
 </section>
 
+<!-- ======================== WORK ======================== -->
+<section id="work">
+  <div class="section-label"><span class="mono-label">Featured Project</span></div>
+  <h2>Our Work</h2>
+  <p class="section-subtitle">Real results for real clients.</p>
+  <div class="work-showcase reveal">
+    <div class="work-card">
+      <a href="https://www.gettysburgwrestling.com" target="_blank" rel="noopener noreferrer" class="work-card-image">
+        <img src="images/wrestling_site_mock.png" alt="Gettysburg Wrestling website designed by Fortney Design Co">
+      </a>
+      <div class="work-card-content">
+        <span class="mono-label">Client Project</span>
+        <h3>Gettysburg Wrestling</h3>
+        <p>Rebuilt from a Squarespace template into a custom, mobile-first site with embedded team calendars and sponsor galleries. Launched March 2025.</p>
+        <div class="work-card-stats">
+          <div class="work-card-stat">
+            <strong>+48%</strong>
+            <span>Traffic</span>
+          </div>
+          <div class="work-card-stat">
+            <strong>2x</strong>
+            <span>Faster Navigation</span>
+          </div>
+        </div>
+        <a href="https://www.gettysburgwrestling.com" target="_blank" rel="noopener noreferrer" class="work-card-link">View Live Site <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
 <section id="contact">
+  <div class="section-label"><span class="mono-label">Get Started</span></div>
   <h2>Start Your Project</h2>
-  <p class="section-subtitle">Tell us about what you're building. We'll get back to you within 24 hours.</p>
+  <p class="section-subtitle">Tell us what you're building. We'll get back to you within 24 hours.</p>
   <form action="https://formsubmit.co/sales@fortneydesignco.com" method="POST" class="reveal">
     <input type="text" name="Name" placeholder="Your name" required>
     <input type="email" name="Email" placeholder="Your email" required>
     <textarea name="Message" rows="5" placeholder="Tell us about your project..."></textarea>
-    <button type="submit" class="btn">Send Message</button>
+    <button type="submit" class="btn">Send Message <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
   </form>
 </section>
 
+<!-- ======================== FOOTER ======================== -->
 <footer>
-  <p>&copy; <span id="year"></span> Fortney Design Co. All rights reserved.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img id="text-logo" src="images/monogram_logo.png" alt="Fortney Design Co" style="height:36px;width:auto;margin-bottom:0;">
+      <p>Web design and social media management for small businesses in Gettysburg and Central PA.</p>
+    </div>
+    <div class="footer-nav">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <p>Gettysburg, PA</p>
+      <a href="mailto:sales@fortneydesignco.com">sales@fortneydesignco.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Fortney Design Co. All rights reserved.</p>
+    <span class="mono-label">Built with care</span>
+  </div>
 </footer>
 
 <script>
+  /* Mobile menu */
   function toggleMenu(){document.querySelector('nav ul').classList.toggle('show');}
+
   document.addEventListener('DOMContentLoaded',function(){
+    /* Year */
     var yr=document.getElementById('year');
-    if(yr)yr.textContent=new Date().getFullYear();
+    if(yr) yr.textContent=new Date().getFullYear();
+
+    /* Scroll progress bar */
+    var prog=document.getElementById('scrollProgress');
+    window.addEventListener('scroll',function(){
+      var h=document.documentElement;
+      var scrolled=h.scrollTop/(h.scrollHeight-h.clientHeight);
+      prog.style.transform='scaleX('+scrolled+')';
+    },{passive:true});
 
     /* Scroll-reveal observer */
     var targets=document.querySelectorAll('.reveal, .reveal-stagger');
@@ -139,11 +247,20 @@
             observer.unobserve(e.target);
           }
         });
-      },{threshold:0.15});
+      },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
       targets.forEach(function(t){observer.observe(t);});
     }else{
       targets.forEach(function(t){t.classList.add('visible');});
     }
+
+    /* Close menu on outside click */
+    document.addEventListener('click',function(e){
+      var nav=document.querySelector('nav ul');
+      var toggle=document.querySelector('.menu-toggle');
+      if(nav.classList.contains('show') && !nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove('show');
+      }
+    });
   });
 </script>
 </body>
